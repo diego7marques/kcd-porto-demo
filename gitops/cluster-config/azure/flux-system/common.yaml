@@ -6,7 +6,7 @@ metadata:
 spec:
   sourceRef:
     kind: GitRepository
-    name: gitops
+    name: flux-system
     namespace: flux-system
   path: gitops/cluster-config/common
   interval: 30s

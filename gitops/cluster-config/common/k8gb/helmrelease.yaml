@@ -34,6 +34,6 @@ spec:
 
     coredns:
       serviceType: LoadBalancer
-        service:
+      service:
         annotations:
           service.beta.kubernetes.io/aws-load-balancer-type: nlb

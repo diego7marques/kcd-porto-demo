@@ -28,7 +28,7 @@ spec:
 
     route53:
       enabled: true
-      hostedZoneID: Z0859238VCOMYEYI1ZIK
+      hostedZoneID: Z01192663NI0F34O48853
       secret: external-dns
       irsaRole: "arn:aws:iam::024848453634:role/external-dns-k8gb"
 

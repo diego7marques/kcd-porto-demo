@@ -18,6 +18,6 @@ spec:
   values: 
     controller:
       replicaCount: 2
-      # service:
-      #   annotations:
-      #     service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: /healthz
+      service:
+        annotations:
+          service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: /healthz

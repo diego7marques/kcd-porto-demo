@@ -9,7 +9,7 @@ spec:
   interval: 1h0m0s
   chart:
     spec:
-      chart: apps/hello-kubernetes/chart
+      chart: gitops/apps/hello-kubernetes/chart
       sourceRef:
         kind: GitRepository
         name: gitops

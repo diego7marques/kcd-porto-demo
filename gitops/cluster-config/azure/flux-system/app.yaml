@@ -1,0 +1,21 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: common
+  namespace: flux-system
+spec:
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+    namespace: flux-system
+  path: gitops/apps
+  interval: 30s
+  retryInterval: 60s
+  timeout: 600s
+  force: true
+  prune: true
+  postBuild:
+    substitute:
+      clusterName: "k8gb-kcdporto-azure"
+      geoTag: "azure-northeurope"
+      geoPairTag: "aws-useast1"

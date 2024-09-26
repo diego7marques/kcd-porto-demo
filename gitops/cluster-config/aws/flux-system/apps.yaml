@@ -19,3 +19,4 @@ spec:
       clusterName: "k8gb-kcdporto-aws"
       geoTag: "aws-useast1"
       geoPairTag: "azure-northeurope"
+      cloud_provider: "AWS"

@@ -15,6 +15,6 @@ spec:
         name: flux-system
         namespace: flux-system
   values: 
-    message: "Welcome from provider ${cloud_provider}"     
+    message: "Welcome from k8s running on ${cloud_provider}"     
     service:
       type: "ClusterIP" 

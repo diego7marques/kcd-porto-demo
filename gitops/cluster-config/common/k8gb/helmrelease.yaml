@@ -30,7 +30,7 @@ spec:
       enabled: true
       hostedZoneID: Z0859238VCOMYEYI1ZIK
       secret: external-dns
-      irsaRole: null
+      irsaRole: "null"
 
     coredns:
       serviceType: LoadBalancer

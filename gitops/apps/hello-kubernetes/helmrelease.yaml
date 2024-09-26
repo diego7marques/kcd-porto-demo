@@ -12,7 +12,7 @@ spec:
       chart: gitops/apps/hello-kubernetes/chart
       sourceRef:
         kind: GitRepository
-        name: gitops
+        name: flux-system
         namespace: flux-system
   values: 
     message: "Welcome from provider ${cloud_provider}"     

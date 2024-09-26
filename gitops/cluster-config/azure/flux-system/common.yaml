@@ -17,5 +17,5 @@ spec:
   postBuild:
     substitute:
       clusterName: "k8gb-kcdporto-azure"
-      geoTag: "aws-useast1"
-      geoPairTag: "azure-northeurope"
+      geoTag: "azure-northeurope"
+      geoPairTag: "aws-useast1"

@@ -1,0 +1,35 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: k8gb
+  namespace: flux-system
+spec:
+  releaseName: k8gb
+  targetNamespace: k8gb
+  interval: 1h0m0s
+  chart:
+    spec:
+      chart: k8gb
+      sourceRef:
+        kind: HelmRepository
+        name: k8gb
+        namespace: flux-system
+  values:
+    k8gb:
+      dnsZone: "demo.diegomarques.dev"
+      edgeDNSZone: "diegomarques.dev"
+      edgeDNSServers:
+          # -- use these DNS server as a main resolver to enable cross k8gb DNS based communication
+          - "1.1.1.1"
+          - "8.8.8.8"
+      clusterGeoTag: "${geoTag}"
+      extGslbClustersGeoTags: "${geoPairTag}"
+      reconcileRequeueSeconds: 10
+
+    route53:
+      enabled: true
+      hostedZoneID: Z0859238VCOMYEYI1ZIK
+      secret: external-dns
+
+    coredns:
+      serviceType: LoadBalancer

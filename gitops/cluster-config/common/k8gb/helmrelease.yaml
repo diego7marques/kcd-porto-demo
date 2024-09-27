@@ -37,4 +37,4 @@ spec:
       service:
         annotations:
           service.beta.kubernetes.io/aws-load-balancer-type: nlb
-          service.beta.kubernetes.io/aws-load-balancer-healthcheck-port: 30219
+          service.beta.kubernetes.io/aws-load-balancer-healthcheck-port: "30219"

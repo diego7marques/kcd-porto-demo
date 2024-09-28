@@ -18,7 +18,7 @@ spec:
                 port:
                   name: http
   strategy:
-    primaryGeoTag: aws-useast1
+    primaryGeoTag: azure-northeurope
     #aws-useast1
     #azure-northeurope
     type: failover

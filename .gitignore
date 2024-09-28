@@ -36,4 +36,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# Ignore provider lock
+.terraform.lock.hcl
+
 credentials

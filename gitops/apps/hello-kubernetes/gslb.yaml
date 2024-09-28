@@ -22,5 +22,6 @@ spec:
     #   - kcdporto.demo.diegomarques.dev
     #   secretName: kcdporto-demo-tls
   strategy:
-    primaryGeoTag: aws-useast1
+    #primaryGeoTag: aws-useast1
+    primaryGeoTag: azure-northeurope
     type: failover

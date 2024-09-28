@@ -17,10 +17,6 @@ spec:
                 name: hello-kubernetes-hello-kubernetes
                 port:
                   name: http
-    # tls:
-    # - hosts:
-    #   - kcdporto.demo.diegomarques.dev
-    #   secretName: kcdporto-demo-tls
   strategy:
-    primaryGeoTag: aws-useast1
+    primaryGeoTag: azure-northeurope
     type: failover
